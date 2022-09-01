@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main>
+    <header>
+      <div class="first--wrapper">
+        <i class="fas fa-bars"></i>
+        <img src="./images/logo.svg" alt="sneakers">
+        <ul class="nav--list">
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="second--wrapper">
+        <div class="cart--wrapper">
+          <div class="cart--icon" data-order="4">
+            <img src="./images/icon-cart.svg" alt="cart" aria-hidden="true">
+          </div>
+          <div class="checkout--wrapper">
+            <span>Cart</span>
+            <div class="order--wrapper">
+              <img src="./images/image-product-1-thumbnail.jpg" alt="shoes">
+              <p>Fall Limited Edition Sneakers $125.00 x <span class="quantity">3</span> <span
+                  class="total-price">$375</span></p>
+              <i class="fas fa-trash"></i>
+              <button class="checkout">Checkout</button>
+            </div>
+            <!-- <div class="order--wrapper-2">
+              <p>Your cart is empty</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="profile--img">
+          <img src="./images/image-avatar.png" alt="avatar">
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTAINER  -->
+    <div class="main--container">
+
+      <!-- FIRST CONTAINER  -->
+      <div class="img--wrapper">
+        <div class="img--container">
+          <div class="carousel--container">
+            <div class="carousel--wrapper">
+              <img src="./images/image-product-1.jpg" alt="product-1" aria-hidden="true">
+              <img src="./images/image-product-2.jpg" alt="product-1" aria-hidden="true">
+              <img src="./images/image-product-3.jpg" alt="product-1" aria-hidden="true">
+              <img src="./images/image-product-4.jpg" alt="product-1" aria-hidden="true">
+            </div>
+            <div class="prev--btn">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="next--btn">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="img--selector">
+          <div class="thumbnail--img"></div>
+          <div class="thumbnail--img"></div>
+          <div class="thumbnail--img"></div>
+          <div class="thumbnail--img"></div>
+        </div>
+      </div>
+
+      <!-- SECOND CONTAINER  -->
+      <div class="description--wrapper">
+        <div class="description--container">
+          <span class="company">Sneaker company</span>
+          <h1 class="heading">Fall Limited Edition Sneakers</h1>
+          <p>
+            These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+        </div>
+        <div class="actual--wrapper">
+          <p>$125.00 <span class="discount">50%</span></p>
+          <span class="actual--price">$250.00</span>
+        </div>
+        <div class="add--to--cart--container">
+          <div class="counter--wrapper">
+            <i class="fas fa-minus"></i>
+            <span id="quantity-digit">0</span>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="add--to--cart--btn">
+            <i class="fas fa-cart-shopping"></i>
+            <button>Add To cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
