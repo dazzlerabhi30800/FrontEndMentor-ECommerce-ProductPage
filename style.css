@@ -463,6 +463,10 @@ header {
         cursor: pointer;
     }
 
+    .second--wrapper .profile--img img {
+        cursor: pointer;
+    }
+
     .order--wrapper>i {
         cursor: pointer;
     }
@@ -584,6 +588,19 @@ header {
         color: var(--Very-vark-blue);
     }
 
+    /* NOTE AVATAR IMG  */
+    .second--wrapper .profile--img img {
+        width: 40px;
+        height: 40px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        transition: all .3s linear;
+    }
+
+    .second--wrapper .profile--img img:hover {
+        border: 3px solid var(--Orange);
+    }
+
     /* NOTE CART WRAPPER  */
     .cart--wrapper {
         position: relative;
@@ -622,6 +639,8 @@ header {
     .img--container {
         height: 500px;
     }
+
+
 
     .img--selector {
         display: flex;
@@ -674,6 +693,12 @@ header {
 
     .carousel--container {
         border-radius: 10px;
+    }
+
+    .carousel--wrapper {
+        display: flex;
+        transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+        width: 500px;
     }
 
     .description--wrapper {
@@ -791,7 +816,7 @@ header {
 
     .big--img--carousel {
         display: flex;
-        transition: all .3s linear;
+        transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
         width: 630px;
     }
 
