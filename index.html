@@ -34,18 +34,18 @@
       </div>
       <div class="second--wrapper">
         <div class="cart--wrapper">
-          <div class="cart--icon" data-order="4">
+          <div class="cart--icon" data-order="0">
             <img src="./images/icon-cart.svg" alt="cart" aria-hidden="true">
           </div>
           <div class="checkout--wrapper">
-            <span>Cart</span>
+            <!-- <span>Cart</span>
             <div class="order--wrapper">
               <img src="./images/image-product-1-thumbnail.jpg" alt="shoes">
               <p>Fall Limited Edition Sneakers $125.00 x <span class="quantity">3</span> <span
                   class="total-price">$375</span></p>
               <i class="fas fa-trash"></i>
               <button class="checkout">Checkout</button>
-            </div>
+            </div> -->
             <!-- <div class="order--wrapper-2">
               <p>Your cart is empty</p>
             </div> -->
@@ -66,9 +66,9 @@
           <div class="carousel--container">
             <div class="carousel--wrapper">
               <img src="./images/image-product-1.jpg" alt="product-1" aria-hidden="true">
-              <img src="./images/image-product-2.jpg" alt="product-1" aria-hidden="true">
-              <img src="./images/image-product-3.jpg" alt="product-1" aria-hidden="true">
-              <img src="./images/image-product-4.jpg" alt="product-1" aria-hidden="true">
+              <img src="./images/image-product-2.jpg" alt="product-2" aria-hidden="true">
+              <img src="./images/image-product-3.jpg" alt="product-3" aria-hidden="true">
+              <img src="./images/image-product-4.jpg" alt="product-4" aria-hidden="true">
             </div>
             <div class="prev--btn">
               <i class="fas fa-chevron-left"></i>
@@ -79,10 +79,10 @@
           </div>
         </div>
         <div class="img--selector">
-          <div class="thumbnail--img"></div>
-          <div class="thumbnail--img"></div>
-          <div class="thumbnail--img"></div>
-          <div class="thumbnail--img"></div>
+          <div data-index="0" class="thumbnail--img"></div>
+          <div data-index="1" class="thumbnail--img"></div>
+          <div data-index="2" class="thumbnail--img"></div>
+          <div data-index="3" class="thumbnail--img"></div>
         </div>
       </div>
 
@@ -102,14 +102,43 @@
         </div>
         <div class="add--to--cart--container">
           <div class="counter--wrapper">
-            <i class="fas fa-minus"></i>
+            <i class="fas fa-minus" id="minus--btn"></i>
             <span id="quantity-digit">0</span>
-            <i class="fas fa-plus"></i>
+            <i class="fas fa-plus" id="add--btn"></i>
           </div>
-          <div class="add--to--cart--btn">
+          <div class="add--to--cart--btn" id="addCart">
             <i class="fas fa-cart-shopping"></i>
             <button>Add To cart</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- BIG IMAGE WRAPPER  -->
+    <div class="big--img--wrapper">
+      <div class="another--wrapper">
+
+        <i class="fas fa-times" id="close--btn"></i>
+        <div class="big--img--container">
+          <div class="big--img--carousel">
+            <img src="./images/image-product-1.jpg" alt="product-1">
+            <img src="./images/image-product-2.jpg" alt="product-2">
+            <img src="./images/image-product-3.jpg" alt="product-3">
+            <img src="./images/image-product-4.jpg" alt="product-4">
+          </div>
+          <div class="prev--btn-2">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="next--btn-2">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="img--selector-2">
+          <div data-index="0" class="thumbnail--img-2"></div>
+          <div data-index="1" class="thumbnail--img-2"></div>
+          <div data-index="2" class="thumbnail--img-2"></div>
+          <div data-index="3" class="thumbnail--img-2"></div>
         </div>
       </div>
     </div>
