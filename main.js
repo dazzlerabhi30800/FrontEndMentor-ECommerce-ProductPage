@@ -208,6 +208,8 @@ function handleAddToCart(orderQuantity) {
     }
     else {
         checkCounter(0);
+        orderPopup.setAttribute('data-order', orderQuantity);
+        orderPopup.classList.remove('ordered');
     }
 }
 
