@@ -152,7 +152,7 @@ function checkCounter(quantity) {
                   <span>Cart</span>
             <div class="order--wrapper">
               <img src="./images/image-product-1-thumbnail.jpg" alt="shoes">
-              <p>Fall Limited Edition Sneakers $125.00 x <span class="quantity">${quantity}</span>= <span
+              <p>Fall Limited Edition Sneakers $125.00 x <span class="quantity">${quantity}</span>=<span
                   class="total-price">\$${quantity * 125.00}</span></p>
               <i onClick="cartEmpty()" class="fas fa-trash"></i>
               <button class="checkout">Checkout</button>
