@@ -72,6 +72,9 @@ nextBtn.addEventListener('click', () => {
     carouselContainer.style.transform = `translateX(${-indexCarousel * 500}px)`;
 })
 
+
+
+
 prevBtn2.addEventListener('click', () => {
     indexCarousel--;
     if (indexCarousel < 0) {
@@ -87,6 +90,7 @@ nextBtn2.addEventListener('click', () => {
     if (indexCarousel > 3) {
         indexCarousel = 0;
     }
+
     carouselContainer2.style.transform = `translateX(${-indexCarousel * 630}px)`;
     highlightImgs2.forEach(img => img.classList.remove('highlight'));
     highlightImgs2[indexCarousel].classList.add('highlight');
@@ -104,6 +108,7 @@ function handleHighlight() {
     else {
         bigCarousel.classList.remove('select');
     }
+    highlightImgs2[index].classList.add('highlight');
     carouselContainer2.style.transform = `translateX(${-index * 630}px)`;
     indexCarousel = index;
 }
@@ -147,7 +152,7 @@ function checkCounter(quantity) {
                   <span>Cart</span>
             <div class="order--wrapper">
               <img src="./images/image-product-1-thumbnail.jpg" alt="shoes">
-              <p>Fall Limited Edition Sneakers $125.00 x <span class="quantity">${quantity}</span> <span
+              <p>Fall Limited Edition Sneakers $125.00 x <span class="quantity">${quantity}</span>= <span
                   class="total-price">\$${quantity * 125.00}</span></p>
               <i onClick="cartEmpty()" class="fas fa-trash"></i>
               <button class="checkout">Checkout</button>
