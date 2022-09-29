@@ -108,6 +108,7 @@ function handleHighlight() {
     else {
         bigCarousel.classList.remove('select');
     }
+    highlightImgs2.forEach(img => img.classList.remove('highlight'));
     highlightImgs2[index].classList.add('highlight');
     carouselContainer2.style.transform = `translateX(${-index * 630}px)`;
     indexCarousel = index;
@@ -132,6 +133,8 @@ highlightImgs2.forEach(img => img.addEventListener('click', handleHighlight2))
 closeBtn.addEventListener('click', () => {
     if (bigCarousel.classList.contains('select')) {
         bigCarousel.classList.remove('select');
+        highlightImgs.forEach(img => img.classList.remove('highlight'));
+        highlightImgs2.forEach(img => img.classList.remove('highlight'));
     }
     else {
         return;
